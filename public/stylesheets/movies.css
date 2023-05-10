@@ -1,0 +1,33 @@
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+}
+
+.movie-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+}
+
+.movie-card h2 {
+  margin: 0;
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.movie-card p {
+  margin: 0;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.add-movie {
+  margin-bottom: 10px;
+}
