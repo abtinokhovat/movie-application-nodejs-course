@@ -5,7 +5,7 @@ This is a Movie Application that allows users to view, add, edit, and delete mov
 ## Installation
 
 1. Install MongoDb On your system
-2. Clone the repository: `git clone https://github.com/your-username/movie-application.git`
+2. Clone the repository: `git clone https://github.com/abtinokhovat/movie-application-nodejs-course.git`
 3. Install dependencies: `npm install`
 
 ## Configuration
