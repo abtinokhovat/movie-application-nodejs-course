@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="header">Movie List</title>
+    <style>
+      body {
+        font-family: Helvetica, serif;
+      }
+      /* Styles for movie cards */
+      #movie-list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1rem;
+      }
+
+      .movie-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.2s ease-in-out;
+      }
+
+      .movie-card:hover {
+        transform: translateY(-2px);
+      }
+
+      .movie-card img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+
+      .movie-card h2 {
+        margin: 0;
+        padding: 1rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+
+      .movie-card p {
+        margin: 0;
+        padding: 1rem;
+        font-size: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Movie List</h1>
+    <div id="movie-list"></div>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
